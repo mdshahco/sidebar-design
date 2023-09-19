@@ -77,7 +77,8 @@ ul li{
 
 
 }
-.scrollbox-inner ul li a .mini-icon{
+/* .scrollbox-inner ul li a  */
+.mini-icon{
     margin-right: 12px;
 }
 .scrollbox-inner ul li a .down-arrow{
@@ -112,6 +113,51 @@ ul li{
    font-weight: 700;
 } 
 
+
+.accordion-item{
+    border: none;
+}
+.accordion-button{
+    
+    border-radius: 8px !important;
+    padding: 14px 12px !important;
+    margin: 8px 0 !important;
+}
+.accordion-body{
+    padding: 0 !important;
+}
+.accordion-button:hover{
+    background-color: #E8F7FF;
+    color: #2a3547;
+}
+.accordion-button:active{
+    background-color: #2a3547;
+
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+    background-image: url(https://img.icons8.com/metro/26/000000/expand-arrow.png);
+    
+}
+.accordion-button:not(.collapsed)::after {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+
+    background-image: url(https://img.icons8.com/metro/26/000000/expand-arrow.png);
+
+
+    transform: rotate(-180deg);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: rgb(93, 135, 255);
+    box-shadow: none;
+}
 
 
 /* {{-- nav footer  --}} */
@@ -180,3 +226,5 @@ ul li{
   } --}} */
 
 
+  .collapsible-section {
+    display: none;}
